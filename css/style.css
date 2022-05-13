@@ -17,7 +17,7 @@
 }
 
 header {
-    
+
     width: 100%;
     height: 60px;
     padding: 30px;
@@ -107,16 +107,17 @@ label {
     background-color: var(--bg-label);
     margin: 20px auto;
     margin-bottom: 20px;
-    
-}
-/* lista-tabela */
-.lista-tabela{
-    width: 100%;
-    margin-top: 14px;
-    
+
 }
 
-tr{
+/* lista-tabela */
+.lista-tabela {
+    width: 100%;
+    margin-top: 14px;
+
+}
+
+tr {
     margin: 15px;
     display: flex;
     flex-direction: row;
@@ -126,15 +127,15 @@ tr{
 
 }
 
-th{   
-  
+th {
+
     font-size: 15px;
     color: var(--color-titulo);
 }
 
-td{
+td {
     margin-right: 0;
-    font-size: 100%; 
+    font-size: 16px;
     text-align: left;
     font-weight: 500;
     color: var(--color-width);
@@ -145,32 +146,104 @@ td{
 
 
 /* foot */
-footer{
+footer {
     margin-top: 30px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
 }
 
-footer  .h2{
+footer .h2 {
     font-size: 12px;
     color: var(--color-titulo);
     margin: 11px 14px;
 }
 
-footer  .h2 a{
+footer .h2 a {
     font-size: 12px;
     text-decoration: none;
     color: var(--color-titulo);
 }
 
-footer  .h2 a:hover{
+footer .h2 a:hover {
     color: black;
 }
-footer img{
+
+footer img {
     background-color: black;
     border-radius: 100%;
     width: 40px;
     height: 40px;
-    
+
+}
+
+/* media cuery */
+
+/* Medium devices (tablets, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .row2 {
+        height: 340px;
+    }
+    .lista-tabela{
+        height: 310px;
+    }
+    tr{
+        margin: 14px;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+}
+
+/* Small devices (landscape phones, 440px and up) */
+
+
+
+@media only screen and (max-width: 440px) {
+
+
+    .row2 {
+        height: 340px;
+    }
+ 
+    th {
+        font-size: 11px;
+    }
+
+    td {
+        font-size: 10px;
+    }
+
+}
+
+/* Small devices (landscape phones, 370px and up) */
+
+@media only screen and (max-width: 370px) {
+
+
+    .row2 {
+        height: 280px;
+    }
+    .nome-list{
+        font-size: 15px;
+    }
+    .lista-tabela{
+        height: 400px;
+    }
+    tr{
+        margin: 11px;
+    }
+    th {
+        font-size: 10px;
+    }
+
+    td {
+        font-size: 9px;
+    }
+
 }
