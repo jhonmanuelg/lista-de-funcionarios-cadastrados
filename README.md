@@ -19,5 +19,5 @@
 ----
 
 
-[Vista no WEB](https://github.com/jhonmanuelg/lista-de-funcionarios-cadastrados.git "Link para o site")
+[Vista no WEB](https://jhonmanuelg.github.io/lista-de-funcionarios-cadastrados/ "Link para o site")
 
