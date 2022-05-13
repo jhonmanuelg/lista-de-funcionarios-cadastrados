@@ -10,12 +10,14 @@
 }
 
 :root {
-    --color-fondo: rgb(134, 161, 161);
-    --color-titulo: rgb(253, 165, 3);
-    --bg-label: rgba(148, 243, 224, 0.401);;
+    --color-fondo: rgb(61, 70, 70);
+    --color-titulo: rgb(253, 199, 3);
+    --bg-label: rgba(99, 105, 104, 0.77);
+    --color-width: rgb(255, 255, 255);
 }
 
 header {
+    
     width: 100%;
     height: 60px;
     padding: 30px;
@@ -28,7 +30,7 @@ header {
 }
 
 img {
-    width: 90px;
+    width: 70px;
     height: 60px;
     text-align: center;
     margin-bottom: 8px;
@@ -48,19 +50,23 @@ body {
 main {
     border-radius: 2px;
     width: 90%;
-    min-height: 580px;
+    min-height: 720px;
     margin: 15px auto;
     background-color: var(--color-fondo);
 
 }
 
 .row {
+    margin: 0px 0px 0px 20px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-shrink: 2;
+
 }
 
 .inputBox {
+    color: var(--color-titulo);
     margin-top: 10px;
     display: flex;
     flex-direction: column-reverse;
@@ -68,10 +74,11 @@ main {
 }
 
 input {
-    width: 190px;
+    color: var(--color-titulo);
+    width: 240px;
     height: 30px;
-    font-size: 70%;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 800;
     margin: 1.4px;
     border: none;
     background-color: var(--bg-label);
@@ -95,12 +102,46 @@ label {
 
 .row2 {
     width: 96%;
-    min-height: 430px;
+    height: 450px;
     text-align: center;
     background-color: var(--bg-label);
     margin: 20px auto;
+    margin-bottom: 20px;
     
 }
+/* lista-tabela */
+.lista-tabela{
+    width: 100%;
+    margin-top: 14px;
+    
+}
+
+tr{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+}
+
+th{   
+  
+    font-size: 15px;
+    color: var(--color-titulo);
+}
+
+td{
+    margin-right: 0;
+    font-size: 100%; 
+    text-align: left;
+    font-weight: 500;
+    color: var(--color-width);
+}
+
+
+
 
 
 /* foot */
@@ -117,9 +158,19 @@ footer  .h2{
     margin: 11px 14px;
 }
 
+footer  .h2 a{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--color-titulo);
+}
+
+footer  .h2 a:hover{
+    color: black;
+}
 footer img{
     background-color: black;
     border-radius: 100%;
     width: 40px;
     height: 40px;
+    
 }
