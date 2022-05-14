@@ -97,9 +97,9 @@ main {
 
 
 .row2 {
-    border: 1px solid red;
+   
     width: 96%;
-    height: 450px;
+    height: 385px;
     background-color: var(--bg-label);
     margin: 20px auto;
     display: flex;
@@ -113,12 +113,12 @@ main {
 .lista-tabela {
     width: 100%;
     margin-top: 3px;
-    border: 1px solid rgb(251, 255, 0);
+   
 
 }
 
 tr {
-    border: 1px solid rgb(0, 255, 140);
+    
     margin: 12px;
     display: flex;
     flex-direction: row;
