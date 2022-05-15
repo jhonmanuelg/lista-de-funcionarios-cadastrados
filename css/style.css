@@ -10,9 +10,9 @@
 }
 
 :root {
-    --color-fondo: rgb(61, 70, 70);
+    --color-fondo: #DBDADB;
     --color-titulo: rgb(253, 199, 3);
-    --bg-label: rgba(99, 105, 104, 0.77);
+    --bg-label: #32373E;
     --color-width: rgb(255, 255, 255);
 }
 
@@ -37,13 +37,15 @@ img {
 }
 
 header h2 {
-    margin-right: 14px;
+    margin-right: 34px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
+    text-align: center;
     color: var(--color-titulo);
 }
 
 body {
+    background-color: var(--bg-label);
     min-height: 100vh;
 }
 
@@ -61,8 +63,9 @@ main {
 
 .row {
     margin: 4px auto;
+    margin-top: 13px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
 
 
@@ -81,9 +84,8 @@ main {
     border-radius: 3px;
     width: 120px;
     height: 30px;
-    margin-left: 9px;
+    margin-left: 16px;
     background-color: var(--bg-label);
-    color: var(--color-titulo);
     cursor: pointer;
     transition: 0.7s;
 
@@ -94,7 +96,12 @@ main {
     box-shadow: 0px 0px 10px var(--color-titulo);
 }
 
-
+.btn a{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-titulo);
+}
 
 .row2 {
    
@@ -145,7 +152,7 @@ td {
 
 /* foot */
 footer {
-    margin-top: 60px ;
+    margin-top: 100px ;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -181,7 +188,7 @@ footer img {
 /* Medium devices (tablets, 600px and up) */
 @media only screen and (max-width: 600px) {
     .row2 {
-        height: 340px;
+        height: 350px;
     }
 
     .lista-tabela {
@@ -209,7 +216,7 @@ footer img {
 
 
     .row2 {
-        height: 340px;
+        height: 350px;
     }
 
     th {
@@ -228,7 +235,7 @@ footer img {
 
 
     .row2 {
-        height: 280px;
+        height: 260px;
     }
 
     .nome-list {

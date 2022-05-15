@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Libre Bodoni', serif;
+}
+
+:root {
+    --bg-color: rgb(50, 55, 62);
+    --primary-color: rgba(255, 252, 252, 0.822);
+    --color-title: rgb(253, 199, 3);
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 30px;
+    text-align: center;
+    user-select: none;
+    color: var(--color-title);
+
+}
+
+
+.container {
+    width: 80%;
+    padding: 20px;
+    margin-top: 80px;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+
+}
+
+.link-html{
+   position: absolute;
+    left: 30px;
+    top: 90px;
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 40px;
+}
+
+.inputBox {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 30px;
+
+}
+
+.genero-selecao {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.genero-selecao label {
+    text-align: center;
+    color: var(--color-title);
+
+}
+
+.label {
+    text-align: center;
+    padding: 9px;
+    color: var(--color-title);
+}
+
+
+
+.dptmento {
+    border: none;
+    width: 150px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.genero {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.genero1 {
+    padding-left: 15px;
+    margin-top: 14px;
+   
+}
+
+.genero1 select{
+   font-weight: 600;
+    font-size: 14px;
+}
+.Estatud {
+    width: 80px;
+   border: 1px solid red;
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+}
+
+.label2 {
+    font-size: 15px;
+    color: var(--color-title);
+}
+
+
+.inputBox label {
+    position: relative;
+    top: 0;
+    left: -10;
+    font-size: 15px;
+    color: var(--color-title);
+    transition: .3s;
+    cursor: text;
+}
+
+.inputBox input {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 4px;
+    bottom: -3px;
+    padding: 3px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    position: 0 10px;
+    transition: .3s;
+    color: black;
+    font-weight: bold;
+
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+    height: 100%;
+}
+
+.inputBox input:focus+label,
+.inputBox input:valid+label {
+    top: -30px;
+    left: 0;
+
+}
+
+
+
+.container .button {
+    margin-top: 20px;
+    margin-bottom: 27px;
+    justify-self: center;
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.container .button:hover {
+    box-shadow: 0px 0px 16px var(--color-title);
+}
+
+.container .button a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-title);
+}
+
+
+
+
