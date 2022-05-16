@@ -39,7 +39,7 @@
             </div>
 
             <div class="inputBox">
-                <input type="text" name="RG" id="RG" value="" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="XXXXXXXX" title="Obrigatório Seu RG" required="required">
+                <input type="text" name="RG" id="RG" value=""  maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="XXXXXXXX" title="Obrigatório Seu RG" required="required">
                 <label for="RG">RG</label>
             </div>
 
@@ -64,7 +64,7 @@
             </div>
 
             <div class="inputBox">
-                <input type="text" name="remuneração" value="" title="Obrigatório o Remuneração" id="remuneração" required placeholder="Salário" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                <input type="text" name="remuneração" value="" title="Obrigatório o Remuneração" id="remuneração" required placeholder="Salário" >
                 <label for="remuneração">Remuneração</label>
             </div>
 
@@ -83,11 +83,11 @@
             <div class="genero-selecao">
 
                 <label class="label" title="" for="Gênero">Gênero</label>
-                <label class="label" for="masculino">masculino</label>
+                <label class="label" id="masculino" for="masculino">Masculino</label>
                 <input type="radio" value="masculino" name="remuneração" id="masculino" required>
-                <label class="label" for="feminino">feminino</label>
+                <label class="label" id="feminina" for="feminino">Feminina</label>
                 <input type="radio" value="feminino" name="remuneração" id="feminino" required>
-                <label class="label" for="outro">outro</label>
+                <label class="label" for="outro">Outro</label>
                 <input type="radio" value="outro" name="remuneração" id="outro" required>
 
             </div>
@@ -113,7 +113,7 @@
                 <div class="genero1">
 
                     <label class="label2" title="Remuneração" for="contratação">Regime de contratação</label>
-                    <select class="dptmento" id="contratação" name="concerned_department" required>
+                    <select class="dptmento" id="contratacao" name="concerned_department" required>
                         <option value="">Selecciona un área</option>
                         <option value="billing">CLT</option>
                         <option value="marketing">PJ</option>
@@ -125,7 +125,7 @@
                 <div class="genero1">
 
                     <label class="label2" for="departmento">Estado civil</label>
-                    <select class="dptmento" id="department-selection" name="concerned_department" required>
+                    <select class="dptmento" id="departSelection" name="concerned_department" required>
                         <option value="">Selecciona un área</option>
                         <option value="billing">Soltiro</option>
                         <option value="marketing">Casado</option>
@@ -137,7 +137,7 @@
 
                 <div class="genero1">
                     <label class="label2" for="departmento">Departamento</label>
-                    <select class="dptmento" id="department-selection" name="concerned_department" required>
+                    <select class="dptmento" id="departSelection" name="concerned_department" required>
                         <option value="">Selecciona un área</option>
                         <option value="billing">TI</option>
                         <option value="marketing">Marketing</option>
@@ -149,7 +149,7 @@
 
                 <div class="genero1">
                     <label class="label2" for="departmento">Status</label>
-                    <select class="dptmento" id="department-selection" name="concerned_department" required>
+                    <select class="dptmento" id="departSelection" name="concerned_department" required>
                         <option value="">Selecciona un área</option>
                         <option value="billing">Ativo</option>
                         <option value="marketing">inativo</option>
@@ -205,7 +205,7 @@
 
 
         <div class="row">
-            <button class="button" type="submit" onclick="validarEmail(required.value)" value="Envial"><a href="">Salvar</a></button>
+            <button class="button" ><a href="" onclick="salvar(required.value)" type="submit"  value="">Salvar</a></button>
         </div>
 
     </main>
