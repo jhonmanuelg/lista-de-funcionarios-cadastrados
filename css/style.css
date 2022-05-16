@@ -10,7 +10,7 @@
 }
 
 :root {
-    --color-fondo: #DBDADB;
+    --color-fondo: #f8f8f8;
     --color-titulo: rgb(253, 199, 3);
     --bg-label: #32373E;
     --color-width: rgb(255, 255, 255);
@@ -29,8 +29,8 @@ header {
 }
 
 img {
-    width: 70px;
-    height: 50px;
+    width: 90px;
+    height: 80px;
     text-align: center;
     margin-bottom: 3px;
 
@@ -104,8 +104,7 @@ main {
 }
 
 .row2 {
-   
-    width: 96%;
+    width: 99%;
     height: 385px;
     background-color: var(--bg-label);
     margin: 20px auto;
@@ -115,12 +114,15 @@ main {
 
 }
 
+.row3{
+    margin-right: 41px;
+}
 
 /* lista-tabela */
 .lista-tabela {
     width: 100%;
     margin-top: 3px;
-   
+    margin-right: 4px;
 
 }
 
@@ -129,24 +131,36 @@ tr {
     margin: 12px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-th {
-   
+.tr-title{
+    
+    width: 100%;
+    background-color: var(--color-fondo);
+}
+
+th {  
+    margin-left: 2px;
     font-size: 15px;
     color: var(--color-titulo);
 }
 
-td {
-    
-    margin-left: -1px;
+td {   
     font-weight: 500;
     color: var(--color-width);
 }
 
+tr:hover{
+    background-color: var(--color-fondo);
+    color: var(--bg-label);
+    border-bottom: px solid var(--color-titulo);
+}
 
+td:hover{
+    color: var(--bg-label);
+}
 
 
 
