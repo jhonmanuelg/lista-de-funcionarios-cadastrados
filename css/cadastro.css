@@ -200,7 +200,7 @@ header {
     margin-top: 20px;
     margin-bottom: 27px;
     justify-self: center;
-    width: 80px;
+    width: 130px;
     height: 30px;
     border: none;
     outline: none;
@@ -214,7 +214,7 @@ header {
 }
 
 .container .button a {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
     text-decoration: none;
     color: var(--color-title);
