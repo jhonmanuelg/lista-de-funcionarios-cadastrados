@@ -1,42 +1,66 @@
-// const validate = document.getElementById('validate')
-// const nome = document.getElementById('nome')
-// const CPF = document.getElementById('CPF')
-// const RG = document.getElementById('RG')
-// const email = document.getElementById('email')
-// const Nacionalidade = document.getElementById('Nacionalidade')
-// const nascimento = document.getElementById('nascimento')
-// const admissão = document.getElementById('admissão')
-// const remuneração = document.getElementById('remuneração')
-// const horaTrabalho = document.getElementById('horaTrabalho')
-// const Cargo = document.getElementById('Cargo')
-// const numero = document.getElementById('numero')
-// const masculino = document.getElementById('masculino')
-// const feminina = document.getElementById('feminina')
-// const Estatud = document.getElementById('Estatud')
-// const contratacao = document.getElementById('contratacao')
-// const departSelection = document.getElementById('departSelection')
-// const outro = document.getElementById('outro')
+"use strict";
+
+const btn_guardar = document.querySelector("#btn_guardar");
+const nome = document.querySelector('#nome')
+const CPF = document.querySelector('#CPF')
+const RG = document.querySelector('#RG')
+const email = document.querySelector('#email')
+const Nacionalidade = document.querySelector('#Nacionalidade')
+const nascimento = document.querySelector('#nascimento')
+const admissão = document.querySelector('#admissão')
+const remuneracao = document.querySelector('#remuneracao')
+const horaTrabalho = document.querySelector('#horaTrabalho')
+const Cargo = document.querySelector('#Cargo')
+const masculino = document.querySelector('#masculino')
+const feminina = document.querySelector('#feminina')
+const status = document.querySelector('#status')
+const contratacao = document.querySelector('#contratacao')
+const estadoCivil = document.querySelector('#estadoCivil')
+const departSelection = document.querySelector('#departSelection')
+const numero = document.querySelector('#numero')
+const cep = document.querySelector('#cep')
+const endereco = document.querySelector('#endereco')
+const barrio = document.querySelector('#barrio')
+const ciudade = document.querySelector('#ciudade')
+const estado = document.querySelector('#estado')
 
 
-// function validate (item){
-//    item.setCustomValidity(' ');
-//    item.checkValidity();
-// if (item == salvar){
-//         if(item.value === salvar.value) item.setCustomValidity('');
-//         else item.setCustomValidity('o campo esta incorrecto. ')
-//     }
-//     if (item == nascimento){
-//        let hoje = new Date();
-//        let dnascimento = new Date(nascimento.value);
+let validar = () => {
+  let inputs_requeridos = document.querySelectorAll(
+    "#form_registro [required]"
+  );
+  let error = false;
 
-//        let idade = hoje.getFullYear() - departSelection.getFullYear();
-//        let m = hoje.getMonth() - departSelection.getMonth();
-//        if(m < 0 || (m === 0 && hoje.getDate() < departSelection())){
-//            idade--;
-//        }
-//        if(idade >= 0) document.getElementById('nascimento').value = idade + ' anos ';
-//        else document.getElementById('nascimento').value = "Indique sua data"
-//     }
+  for (let i = 0; i < inputs_requeridos.length; i++)
+    if (inputs_requeridos[i].value == " ") {
+      inputs_requeridos[i].classList.add(alert("input-error"));
+      error = true;
+    } else {
+      inputs_requeridos[i].classList.remove("input-error");
+    }
 
-// }
+  return error;
+};
 
+let obtener_datos = () => {
+  let error = validar();
+
+  if (error) {
+      Swal.fire({
+          'title': 'Datos não Salvodo',
+          'teste': 'Confiera os campo vermelho',
+          'icon': 'warning'
+      });
+  } else {
+    Swal.fire({
+        'title': 'Processo realisado con sucesso',
+        'teste': 'Dato Salvado',
+        'icon': 'success'
+    });
+    console.log(nome.identificacion.value);
+    console.log(CPF.identificacion.value);
+    console.log(RG.identificacion.value);
+  }
+};
+
+btn_guardar.addEventListener("click", obtener_datos);

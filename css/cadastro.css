@@ -210,7 +210,9 @@ header {
 
 } 
 
-
+.input-error{
+border: 3px soli red;
+}
 
 .container .button {
     margin-top: 20px;
