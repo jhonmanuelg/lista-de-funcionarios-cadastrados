@@ -78,7 +78,7 @@ header {
 
 .genero-selecao {
     width: 300px;
-    margin-left: 23px;    
+    margin: auto;    
     display: flex;
     flex-direction: row;
     justify-items: center;
