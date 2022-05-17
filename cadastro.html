@@ -29,67 +29,94 @@
 
         <div class="row">
             <div class="inputBox">
-                <input type="text" name="nome" id="nome" value="" title="Obrigatório seu Nome" minlength="4" maxlength="80"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required="required" >
+                <input type="text" name="nome" id="nome" value="" title="Obrigatório seu Nome" minlength="4"
+                    maxlength="80" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required="required">
                 <label for="nome">Nome Completo</label>
             </div>
 
             <div class="inputBox">
-                <input type="text" name="CPF" id="CPF" value="" minlength="11" maxlength="11" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato nnn.nnn.nnn-nn" required="O campo é Obligatorio">                    
+                <input type="text" name="CPF" id="CPF" value="" minlength="11" maxlength="11"
+                    placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                    title="Digite o CPF no formato nnn.nnn.nnn-nn" required="O campo é Obligatorio">
                 <label for="CPF">CPF</label>
             </div>
 
             <div class="inputBox">
-                <input type="text" name="RG" id="RG" value=""  maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="XXXXXXXX" title="Obrigatório Seu RG" required="required">
+                <input type="text" name="RG" id="RG" value="" maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                    placeholder="XXXXXXXX" title="Obrigatório Seu RG" required="required">
                 <label for="RG">RG</label>
             </div>
 
             <div class="inputBox">
-                <input type="text" name="email" id="email" value="" title="Obrigatório Seu E-mail" maxlength="80" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required="required">
+                <input type="text" name="email" id="email" value="" title="Obrigatório Seu E-mail" maxlength="80"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="required">
                 <label for="email">E-mail</label>
             </div>
 
             <div class="inputBox">
-                <input type="text" name="Nacionalidade" value="" title="Obrigatório Sua Nacionalidade" maxlength="80"  id="Nacionalidade"   minlength="4" maxlength="80"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required="required" >
+                <input type="text" name="Nacionalidade" value="" title="Obrigatório Sua Nacionalidade" maxlength="80"
+                    id="Nacionalidade" minlength="4" maxlength="80" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                    required="required">
                 <label for="Nacionalidade">Nacionalidade</label>
             </div>
 
             <div class="inputBox">
-                <input type="date" class="date" maxlength="10" name="nascimento" value="" title="Obrigatório Data de nascimento" id="nascimento" required pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00/00/2022">
+                <input type="date" class="date" maxlength="10" name="nascimento" value=""
+                    title="Obrigatório Data de nascimento" id="nascimento" required
+                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00/00/2022">
                 <label for="nascimento">Data de nascimento</label>
             </div>
 
             <div class="inputBox">
-                <input type="date" class="date" name="admissão" value="" title="Obrigatório Data de admissão" placeholder="00/00/2022" id="nascimento" required pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2012-01-01" max="2014-02-18" >
+                <input type="date" class="date" name="admissão" value="" title="Obrigatório Data de admissão"
+                    placeholder="00/00/2022" id="nascimento" required pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$"
+                    min="2012-01-01" max="2014-02-18">
                 <label for="admissão">Data de admissão</label>
             </div>
 
             <div class="inputBox">
-                <input type="text" name="remuneração" value="" title="Obrigatório o Remuneração" id="remuneração" required placeholder="Salário" >
+                <input type="text" name="remuneração" value="" title="Obrigatório o Remuneração" id="remuneração"
+                    required placeholder="Salário">
                 <label for="remuneração">Remuneração</label>
             </div>
 
             <div class="inputBox">
-                <input type="number" name="horaTrabalho" value="" id="horaTrabalho" maxlength="80" required pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00:00 a 00:00" title="Obrigatório Introdusca sua Horário de trabalho">
+                <input type="number" name="horaTrabalho" value="" id="horaTrabalho" maxlength="80" required
+                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00:00 a 00:00"
+                    title="Obrigatório Introdusca sua Horário de trabalho">
                 <label for="horaTrabalho">Horário de trabalho</label>
             </div>
 
             <div class="inputBox">
-                <input type="text" name="Cargo"  id="Cargo" value="" minlength="4" maxlength="80"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required="required"  title="Obrigatório Introdusca o Cargo:">
+                <input type="text" name="Cargo" id="Cargo" value="" minlength="4" maxlength="80"
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required="required" title="Obrigatório Introdusca o Cargo:">
                 <label for="Cargo">Cargo:</label>
             </div>
 
         </div>
         <div class="row">
-            <div class="genero-selecao">
+            <div class="row-genero-selecao">
+                <div class="genero-selecao">
+                    <div class="genero-selecao2">
+                        <label class="label-Genero" title="" for="Gênero">Gênero</label>
 
-                <label class="label" title="" for="Gênero">Gênero</label>
-                <label class="label" id="masculino" for="masculino">Masculino</label>
-                <input type="radio" value="masculino" name="remuneração" id="masculino" required>
-                <label class="label" id="feminina" for="feminino">Feminina</label>
-                <input type="radio" value="feminino" name="remuneração" id="feminino" required>
-                <label class="label" for="outro">Outro</label>
-                <input type="radio" value="outro" name="remuneração" id="outro" required>
+                    </div>
 
+                    <div class="genero-selecao2">
+                        <label class="label" id="masculino" for="masculino">Masculino</label>
+                        <input type="radio" value="masculino" name="remuneração" id="masculino" required>
+                    </div>
+
+                    <div class="genero-selecao2">
+                        <label class="label" id="feminina" for="feminino">Feminina</label>
+                        <input type="radio" value="feminino" name="remuneração" id="feminino" required>
+                    </div>
+
+                    <div class="genero-selecao2">
+                        <label class="label" for="outro">Outro</label>
+                        <input type="radio" value="outro" name="remuneração" id="outro" required>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -161,11 +188,13 @@
 
         </div>
 
-        
+
 
         <div class="row">
             <div class="inputBox">
-                <input type="" name="numero" id="numero" value="" required="required" maxlength="9" minlength="9" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(XX)9XXXXXX" title="Introdusca seu Número">
+                <input type="" name="numero" id="numero" value="" required="required" maxlength="9" minlength="9"
+                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(XX)9XXXXXX"
+                    title="Introdusca seu Número">
                 <label for="numero">Numero</label>
             </div>
 
@@ -205,7 +234,8 @@
 
 
         <div class="row">
-            <button class="button" ><a href="" onclick="validate(required.value)" type="submit"  value="">Salvar</a></button>
+            <button class="button"><a href="" onclick="validate(required.value)" type="submit"
+                    value="">Salvar</a></button>
         </div>
 
     </main>
