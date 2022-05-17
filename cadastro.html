@@ -54,12 +54,12 @@
             </div>
 
             <div class="inputBox">
-                <input type="data" maxlength="10" name="nascimento" value="" title="Obrigatório Data de nascimento" id="nascimento" required pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00/00/2022">
+                <input type="date" maxlength="10" name="nascimento" value="" title="Obrigatório Data de nascimento" id="nascimento" required pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00/00/2022">
                 <label for="nascimento">Data de nascimento</label>
             </div>
 
             <div class="inputBox">
-                <input type="text" name="admissão" value="" title="Obrigatório Data de admissão" placeholder="00/00/2022" id="nascimento" required pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2012-01-01" max="2014-02-18" >
+                <input type="date" name="admissão" value="" title="Obrigatório Data de admissão" placeholder="00/00/2022" id="nascimento" required pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2012-01-01" max="2014-02-18" >
                 <label for="admissão">Data de admissão</label>
             </div>
 
@@ -69,7 +69,7 @@
             </div>
 
             <div class="inputBox">
-                <input type="text" name="horaTrabalho" value="" id="horaTrabalho" maxlength="80" required pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00:00 a 00:00" title="Obrigatório Introdusca sua Horário de trabalho">
+                <input type="number" name="horaTrabalho" value="" id="horaTrabalho" maxlength="80" required pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00:00 a 00:00" title="Obrigatório Introdusca sua Horário de trabalho">
                 <label for="horaTrabalho">Horário de trabalho</label>
             </div>
 
@@ -102,7 +102,7 @@
 
                     <label class="label2" for="Estatud">Estatud</label>
                     <select class="dptmento" id="Estatud" name="concerned_department" required>
-                        <option value="">Selecciona un Estatud</option>
+                        <option value="">Selecciona </option>
                         <option value="billing">Ativo</option>
                         <option value="marketing">Inativo</option>
 
@@ -114,7 +114,7 @@
 
                     <label class="label2" title="Remuneração" for="contratação">Regime de contratação</label>
                     <select class="dptmento" id="contratacao" name="concerned_department" required>
-                        <option value="">Selecciona un área</option>
+                        <option value="">Selecciona</option>
                         <option value="billing">CLT</option>
                         <option value="marketing">PJ</option>
 
@@ -126,7 +126,7 @@
 
                     <label class="label2" for="departmento">Estado civil</label>
                     <select class="dptmento" id="departSelection" name="concerned_department" required>
-                        <option value="">Selecciona un área</option>
+                        <option value="">Selecciona</option>
                         <option value="billing">Soltiro</option>
                         <option value="marketing">Casado</option>
                         <option value="technical support">Divorsiado</option>
@@ -138,7 +138,7 @@
                 <div class="genero1">
                     <label class="label2" for="departmento">Departamento</label>
                     <select class="dptmento" id="departSelection" name="concerned_department" required>
-                        <option value="">Selecciona un área</option>
+                        <option value="">Selecciona</option>
                         <option value="billing">TI</option>
                         <option value="marketing">Marketing</option>
                         <option value="technical support">Comercial</option>
@@ -150,7 +150,7 @@
                 <div class="genero1">
                     <label class="label2" for="departmento">Status</label>
                     <select class="dptmento" id="departSelection" name="concerned_department" required>
-                        <option value="">Selecciona un área</option>
+                        <option value="">Selecciona</option>
                         <option value="billing">Ativo</option>
                         <option value="marketing">inativo</option>
                     </select>
@@ -165,8 +165,8 @@
 
         <div class="row">
             <div class="inputBox">
-                <input type="number" name="numero" id="numero" value="" required="required" maxlength="9" minlength="9" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(XX)9XXXXXX" title="Introdusca seu Número">
-                <label for="umero">Numero</label>
+                <input type="" name="numero" id="numero" value="" required="required" maxlength="9" minlength="9" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(XX)9XXXXXX" title="Introdusca seu Número">
+                <label for="numero">Numero</label>
             </div>
 
 

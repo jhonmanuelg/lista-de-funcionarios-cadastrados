@@ -78,6 +78,8 @@ header {
 
 .genero-selecao {
     width: 300px;
+    margin: 9px;
+    
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -100,8 +102,9 @@ header {
 
 
 .dptmento {
+    
     border: none;
-    width: 160px;
+    width: 130px;
     background-color: var(--primary-color);
     display: flex;
     flex-direction: row;
@@ -110,17 +113,21 @@ header {
 }
 
 
-.genero {
+.genero {   
+    margin-bottom: 16px; 
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    transition: all 6s;
 }
 
 .genero1 {
-    padding-left: 15px;
-    margin-top: 14px;
+    padding: 9px;
+    padding-left: 0px;
+    margin-top: 9px;
    
 }
 
@@ -137,53 +144,55 @@ header {
 
 .label2 {
     font-size: 15px;
-    color: var(--color-title);
-   
+    color: var(--color-title);   
 }
 
 
 
 .inputBox label {
     position: relative;
-    top: 0;
+    top:20;
     left: -10;
     font-size: 15px;
     color: var(--color-title);
-    transition: .3s;
+    transition: .9s;
     cursor: text;
 }
 
+
 .inputBox input {
-    position: absolute;
     background-color: var(--primary-color);
     width: 100%;
-    height: 4px;
+    height: 68px;
     bottom: -3px;
-    padding: 3px;
+    padding: 6px;
     box-shadow: none;
     border: none;
     outline: none;
     border-radius: 2px;
     font-size: 15px;
     font-weight: bold;
-    position: 0 10px;
-    transition: .3s;
+    transition: 0.3s;
     color: black;
     font-weight: bold;
 
 }
 
-.inputBox input:focus,
+.inputBox input:hover{
+    border-bottom: 5px solid var(--color-title);
+}
+
+ .inputBox input:focus,
 .inputBox input:valid {
     height: 100%;
 }
 
 .inputBox input:focus+label,
 .inputBox input:valid+label {
-    top: -30px;
+    top: -10px;
     left: 0;
 
-}
+} 
 
 
 
