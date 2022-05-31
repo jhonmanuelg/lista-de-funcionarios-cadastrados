@@ -202,6 +202,13 @@ header {
 }
 
 @media (max-width: 920px) {
+
+    .container-lista{
+        height: 744px;
+    }
+    .tabela-title th {
+        font-size: 16px;
+    }
     .footer {
         margin-top: 102px;
 
@@ -240,6 +247,9 @@ header {
     header{
         height: 90px;
     }
+    .container-lista{
+        height: 454px;
+    }
     .container-title h1{
         margin-top: 6px;
         font-size: 17px;
@@ -251,13 +261,13 @@ header {
     }
 
     .tabela-title th {
-        font-size: 10px;
+        font-size: 12px;
     }
     .nome-lista {
 
         font-size: 9px;
     }
     .footer{
-        margin-top: 82px;
+        margin-top: 105px;
     }
 }
