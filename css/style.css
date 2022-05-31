@@ -93,7 +93,6 @@ header {
 }
 
 .tabela-title th {
-    border: 1px solid red;
     font-size: 15px;
     font-weight: 800;
     color: var(--color-titulo);
