@@ -10,7 +10,8 @@
 }
 
 :root {
-    --color-fondo: #676363;
+    --color-fondo: #302b2b;
+    --color-fondo2: #2a2323;
     --color-titulo: rgb(253, 199, 3);
     --bg-label: #040505;
     --color-width: rgb(255, 255, 255);
@@ -32,6 +33,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -84,30 +86,36 @@ header {
 }
 
 .tabela-title {
+    height: 50px;
     width: 100%;
     background-color: var(--bg-label);
 }
 
 .tabela-title th {
-    font-size: 18px;
+    border: 1px solid red;
+    font-size: 15px;
     font-weight: 800;
     color: var(--color-titulo);
 }
 
 .tabela {
-    display: flex;
-    justify-items: center;
+    height: 500px;
 }
 
 .nome-lista {
-    font-size: 13px;
+    font-size: 17px;
     color: var(--color-width);
     font-weight: 400;
-    background-color: #768294;
+    background-color: var(--color-fondo);
 }
 
 .nome-lista>td {
+    table-layout: fixed;
     padding: 0px 7px;
+}
+
+.nome-lista:nth-child(even) {
+    background-color: var(--color-fondo2);
 }
 
 .btn-editar-talento {
@@ -119,7 +127,7 @@ header {
     margin-top: 40px;
     position: relative;
     left: 10.5%;
-   
+
 
 }
 
@@ -144,6 +152,7 @@ header {
 }
 
 .footer .h2 {
+    font-size: 14px;
     color: var(--color-titulo);
 }
 
@@ -159,6 +168,87 @@ header {
 }
 
 .footer-btn img {
+
     background-color: var(--bg-label);
     border-radius: 50%;
+}
+
+/* media */
+
+@media (max-width: 1613px) {
+    .footer {
+        margin-top: 77px;
+
+    }
+
+    .btn-editar-talento {
+        margin-top: 120px;
+    }
+
+
+}
+
+@media (max-width: 920px) {
+    .footer {
+        margin-top: 101px;
+
+    }
+
+
+
+
+}
+
+@media (max-width: 691px) {
+    header img {
+        display: none;
+    }
+
+    .container-tabela {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .tabela-title th {
+        font-size: 13px;
+    }
+
+
+    .nome-lista {
+
+    font-size: 11px;
+    }
+
+
+    .footer {
+        margin-top: 157px;
+
+    }
+}
+
+@media (max-width: 572px) {
+    header{
+        height: 90px;
+    }
+    .container-title h1{
+        margin-top: 6px;
+        font-size: 17px;
+    }
+    
+    .header-btn{
+        margin-top: 6px;
+        margin-bottom: 9px;
+    }
+
+    .tabela-title th {
+        font-size: 10px;
+    }
+    .nome-lista {
+
+        font-size: 9px;
+    }
+    .footer{
+        margin-top: 101px;
+    }
 }
