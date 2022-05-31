@@ -66,6 +66,7 @@ header {
 }
 
 .btn a:hover{
+    color: aqua;
     box-shadow: 0 0 19px var(--color-width);
 }
 
@@ -148,6 +149,8 @@ header {
 }
 
 .btn-editar-talento a:hover{
+    color: aqua;
+
     box-shadow: 0 0 19px var(--color-width);
 }
 
