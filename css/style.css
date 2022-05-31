@@ -46,7 +46,7 @@ header {
 
 .btn {
     background-color: var(--color-titulo);
-    width: 150px;
+    width: 179px;
     height: 30px;
     border-radius: 20px;
     border: none;
@@ -56,12 +56,17 @@ header {
 .btn a {
     font-size: 14px;
     font-weight: 600;
-    padding: 6px 40px;
+    padding: 6px 56px;
     border-radius: 20px;
     text-decoration: none;
     color: var(--bg-label);
     font-weight: bold;
     text-align: center;
+    transition: 0.5s;
+}
+
+.btn a:hover{
+    box-shadow: 0 0 19px var(--color-width);
 }
 
 .container {
@@ -91,6 +96,7 @@ header {
     width: 100%;
     background-color: var(--bg-label);
 }
+
 
 .tabela-title th {
     font-size: 15px;
@@ -138,6 +144,11 @@ header {
     text-decoration: none;
     color: var(--bg-label);
     text-align: center;
+    transition: 0.5s;
+}
+
+.btn-editar-talento a:hover{
+    box-shadow: 0 0 19px var(--color-width);
 }
 
 .footer {

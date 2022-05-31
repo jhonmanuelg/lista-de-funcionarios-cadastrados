@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/jhong.ico.jpg" type="image/x-icon">
-    <link rel="shortcut icon" href="img/assistant.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Books.png" type="image/x-icon">
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,225 +18,246 @@
 
 <body id="cadastro">
     <header>
-
         <h1 class="title">Cadastro de funcionário</h1>
     </header>
 
     <main class="container">
-        <div class="link-html">
-            <button class="button"><a href="index.html">Voltar</a></button>
-        </div>
 
-        <div class="row">
-            <div class="inputBox">
-                <input type="text" name="nome" id="nome" value="" title="Obrigatório seu Nome" minlength="4"
-                    maxlength="80" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                <label for="nome">Nome Completo</label>
+        <form action="">
+            <div class="link-html">
+                <button class="button"><a href="index.html">Voltar</a></button>
             </div>
 
-            <div class="inputBox">
-                <input type="text" name="CPF" id="CPF" value="" minlength="11" maxlength="11"
-                    placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                    title="Digite o CPF no formato nnn.nnn.nnn-nn" required>
-                <label for="CPF">CPF</label>
+            <div class="row">
+                <!--------------------------------dados pessoais------------------------------------------------->
+
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" value="" title="Obrigatório seu Nome" minlength="4"
+                        maxlength="80" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    <label for="nome">Nome Completo</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="CPF" id="CPF" value="" minlength="11" maxlength="11"
+                        placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                        title="Digite o CPF no formato nnn.nnn.nnn-nn" required>
+                    <label for="CPF">CPF</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="RG" id="RG" value="" maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                        placeholder="XXXXXXXX" title="Obrigatório Seu RG" required>
+                    <label for="RG">RG</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" value="" title="Obrigatório Seu E-mail" maxlength="80"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <label for="email">E-mail</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="Nacionalidade" value="" title="Obrigatório Sua Nacionalidade"
+                        maxlength="80" id="Nacionalidade" minlength="4" maxlength="80"
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                    <label for="Nacionalidade">Nacionalidade</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="date" class="date" maxlength="10" name="nascimento" value=""
+                        title="Obrigatório Data de nascimento" id="nascimento" required
+                        pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00/00/2022">
+                    <label for="nascimento">Data de nascimento</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="date" class="date" name="admissão" value="" title="Obrigatório Data de admissão"
+                        placeholder="00/00/2022" id="admissão" required pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$"
+                        min="2012-01-01" max="2014-02-18">
+                    <label for="admissão">Data de admissão</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="remuneracao" value="" title="Obrigatório o Remuneração" id="remuneracao"
+                        required placeholder="Salário">
+                    <label for="remuneracao">Remuneração</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="horaTrabalho" value="" id="horaTrabalho" maxlength="80" required
+                        pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00:00 a 00:00"
+                        title="Obrigatório Introdusca sua Horário de trabalho">
+                    <label for="horaTrabalho">Horário de trabalho</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="Cargo" id="Cargo" value="" minlength="4" maxlength="80"
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required title="Obrigatório Introdusca o Cargo:">
+                    <label for="Cargo">Cargo:</label>
+                </div>
+
             </div>
 
-            <div class="inputBox">
-                <input type="text" name="RG" id="RG" value="" maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                    placeholder="XXXXXXXX" title="Obrigatório Seu RG" required>
-                <label for="RG">RG</label>
+            <!-------------------------------- FIN dados pessoais------------------------------------------------->
+
+            <!--------------------------------dados Generos------------------------------------------------->
+
+            <div class="row">
+                <div class="row-genero-selecao">
+                    <div class="genero-selecao">
+                        <div class="genero-selecao2">
+                            <label class="label-Genero" title="" for="Gênero">Gênero</label>
+
+                        </div>
+
+                        <div class="genero-selecao2">
+                            <label class="label" id="masculino" for="masculino">Masculino</label>
+                            <input type="radio" value="masculino" name="remuneração" id="masculino" required>
+                        </div>
+
+                        <div class="genero-selecao2">
+                            <label class="label" id="feminina" for="feminino">Feminina</label>
+                            <input type="radio" value="feminino" name="remuneração" id="feminino" required>
+                        </div>
+
+                        <div class="genero-selecao2">
+                            <label class="label" for="outro">Outro</label>
+                            <input type="radio" value="outro" name="remuneração" id="outro" required>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="inputBox">
-                <input type="text" name="email" id="email" value="" title="Obrigatório Seu E-mail" maxlength="80"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                <label for="email">E-mail</label>
-            </div>
+            <!--------------------------------FIN dados Generos------------------------------------------------->
 
-            <div class="inputBox">
-                <input type="text" name="Nacionalidade"  value="" title="Obrigatório Sua Nacionalidade" maxlength="80"
-                    id="Nacionalidade" minlength="4" maxlength="80" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-                    required>
-                <label for="Nacionalidade">Nacionalidade</label>
-            </div>
+            <!--------------------------------dados registro------------------------------------------------->
 
-            <div class="inputBox">
-                <input type="date" class="date" maxlength="10" name="nascimento" value=""
-                    title="Obrigatório Data de nascimento" id="nascimento" required
-                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00/00/2022">
-                <label for="nascimento">Data de nascimento</label>
-            </div>
+            <div class="row" id="form_registro">
 
-            <div class="inputBox">
-                <input type="date" class="date" name="admissão" value="" title="Obrigatório Data de admissão"
-                    placeholder="00/00/2022" id="admissão" required pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$"
-                    min="2012-01-01" max="2014-02-18">
-                <label for="admissão">Data de admissão</label>
-            </div>
 
-            <div class="inputBox">
-                <input type="text" name="remuneracao" value="" title="Obrigatório o Remuneração" id="remuneracao"
-                    required placeholder="Salário">
-                <label for="remuneracao">Remuneração</label>
-            </div>
+                <form class="registro">
 
-            <div class="inputBox">
-                <input type="text" name="horaTrabalho" value="" id="horaTrabalho" maxlength="80" required
-                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="00:00 a 00:00"
-                    title="Obrigatório Introdusca sua Horário de trabalho">
-                <label for="horaTrabalho">Horário de trabalho</label>
-            </div>
+                    <div class="registro-sect">
 
-            <div class="inputBox">
-                <input type="text" name="Cargo" id="Cargo" value="" minlength="4" maxlength="80"
-                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required title="Obrigatório Introdusca o Cargo:">
-                <label for="Cargo">Cargo:</label>
-            </div>
+                        <label class="label2" for="estatu">Status</label>
+                        <select class="dptmento" id="estatu" name="concerned_department" required>
+                            <option value="">Seleccione</option>
+                            <option value="billing">Ativo</option>
+                            <option value="marketing">Inativo</option>
 
-        </div>
-        <div class="row">
-            <div class="row-genero-selecao">
-                <div class="genero-selecao">
-                    <div class="genero-selecao2">
-                        <label class="label-Genero" title="" for="Gênero">Gênero</label>
 
+                        </select>
                     </div>
 
-                    <div class="genero-selecao2">
-                        <label class="label" id="masculino" for="masculino">Masculino</label>
-                        <input type="radio" value="masculino" name="remuneração" id="masculino" required>
+                    <div class="registro-sect">
+
+                        <label class="label2" title="Remuneração" for="contratacao">Regime de contratação</label>
+                        <select class="dptmento" id="contratacao" name="concerned_department" required>
+
+                            <option value="">Seleccione</option>
+                            <option value="billing">CLT</option>
+                            <option value="marketing">PJ</option>
+
+                        </select>
                     </div>
 
-                    <div class="genero-selecao2">
-                        <label class="label" id="feminina" for="feminino">Feminina</label>
-                        <input type="radio" value="feminino" name="remuneração" id="feminino" required>
+                    <div class="registro-sect">
+
+                        <label class="label2" for="estadoCivil">Estado civil</label>
+                        <select class="dptmento" id="estadoCivil" name="estadoCivil" required>
+
+                            <option value="">Seleccione</option>
+                            <option value="billing">Soltiro</option>
+                            <option value="marketing">Casado</option>
+                            <option value="technical support">Divorsiado</option>
+                            <option value="technical support">Viudo</option>
+
+                        </select>
                     </div>
 
-                    <div class="genero-selecao2">
-                        <label class="label" for="outro">Outro</label>
-                        <input type="radio" value="outro" name="remuneração" id="outro" required>
+                    <div class="registro-sect">
+                        <label class="label2" for="departmento">Departamento</label>
+                        <select class="dptmento" id="departSelection" name="concerned_department" required>
+
+                            <option value="">Seleccione</option>
+                            <option value="billing">TI</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="technical support">Comercial</option>
+                            <option value="technical support">Inovação</option>
+                            <option value="technical support">Administrativo</option>
+
+                        </select>
                     </div>
-                </div>
+
+                    <div class="registro-sect">
+                        <label class="label2" for="status">Status</label>
+                        <select class="dptmento" id="status" name="status" required>
+
+                            <option value="">Seleccione</option>
+                            <option value="billing">Ativo</option>
+                            <option value="marketing">inativo</option>
+
+                        </select>
+                    </div>
+
+
+                </form>
+
             </div>
-        </div>
 
-        <div class="row" id="form_registro">
+            <!--------------------------------FIN dados registro------------------------------------------------->
 
+            <!--------------------------------dados número celular CPE------------------------------------------------->
 
-            <div class="genero">
-
-                <div class="genero1">
-
-                    <label class="label2" for="estatu">Status</label>
-                    <select class="dptmento" id="estatu" name="concerned_department" required>
-                        <option value="">Seleccione</option>
-                        <option value="billing">Ativo</option>
-                        <option value="marketing">Inativo</option>
-
-
-                    </select>
-                </div>
-
-                <div class="genero1">
-
-                    <label class="label2" title="Remuneração" for="contratacao">Regime de contratação</label>
-                    <select class="dptmento" id="contratacao" name="concerned_department" required>
-                        <option value="">Seleccione</option>
-                        <option value="billing">CLT</option>
-                        <option value="marketing">PJ</option>
-
-
-                    </select>
-                </div>
-
-                <div class="genero1">
-
-                    <label class="label2" for="estadoCivil">Estado civil</label>
-                    <select class="dptmento" id="estadoCivil" name="estadoCivil" required>
-                        <option value="">Seleccione</option>
-                        <option value="billing">Soltiro</option>
-                        <option value="marketing">Casado</option>
-                        <option value="technical support">Divorsiado</option>
-                        <option value="technical support">Viudo</option>
-
-                    </select>
-                </div>
-
-                <div class="genero1">
-                    <label class="label2" for="departmento">Departamento</label>
-                    <select class="dptmento" id="departSelection" name="concerned_department" required>
-                        <option value="">Seleccione</option>
-                        <option value="billing">TI</option>
-                        <option value="marketing">Marketing</option>
-                        <option value="technical support">Comercial</option>
-                        <option value="technical support">Inovação</option>
-                        <option value="technical support">Administrativo</option>
-                    </select>
-                </div>
-
-                <div class="genero1">
-                    <label class="label2" for="status">Status</label>
-                    <select class="dptmento" id="status" name="status" required>
-                        <option value="">Seleccione</option>
-                        <option value="billing">Ativo</option>
-                        <option value="marketing">inativo</option>
-                    </select>
+            <div class="row">
+                <div class="inputBox">
+                    <input type="" name="numero" id="numero" value="" required="required" maxlength="9" minlength="9"
+                        pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(XX)9XXXXXX"
+                        title="Introdusca seu Número" required>
+                    <label for="numero">Numero</label>
                 </div>
 
 
+
+                <div class="inputBox">
+                    <input type="text" name="cep" id="cep" required>
+                    <label for="cep">CEP</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" required>
+                    <label for="endereço">Endereço</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="barrio" id="barrio" required>
+                    <label for="barrio">Bairro</label>
+                </div>
+
             </div>
 
-        </div>
+            <div class="row">
 
 
+                <div class="inputBox">
+                    <input type="text" name="ciudade" id="ciudade" required>
+                    <label for="ciudade">Cidade</label>
+                </div>
 
-        <div class="row">
-            <div class="inputBox">
-                <input type="" name="numero" id="numero" value="" required="required" maxlength="9" minlength="9"
-                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(XX)9XXXXXX"
-                    title="Introdusca seu Número" required>
-                <label for="numero">Numero</label>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" required>
+                    <label for="estado">Estado</label>
+                </div>
             </div>
 
+            <!--------------------------------FIN dados número celular CPE------------------------------------------------->
 
-
-            <div class="inputBox">
-                <input type="text" name="cep" id="cep" required>
-                <label for="cep">CEP</label>
+            <div class="row">
+                <button type="button" class="button" id="btn_guardar"
+                    onclick="validar(obtener_datos)"><a>Salvar</a></button>
             </div>
 
-            <div class="inputBox">
-                <input type="text" name="endereco" id="endereco" required>
-                <label for="endereço">Endereço</label>
-            </div>
-
-            <div class="inputBox">
-                <input type="text" name="barrio" id="barrio" required>
-                <label for="barrio">Bairro</label>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-
-            <div class="inputBox">
-                <input type="text" name="ciudade" id="ciudade" required>
-                <label for="ciudade">Cidade</label>
-            </div>
-
-            <div class="inputBox">
-                <input type="text" name="estado" id="estado" required>
-                <label for="estado">Estado</label>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <button type="button" class="button" id="btn_guardar" onclick="validar(obtener_datos)"><a href=""  
-                    value="">Salvar</a></button>
-        </div>
+        </form>
 
     </main>
 

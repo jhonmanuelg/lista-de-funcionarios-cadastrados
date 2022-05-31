@@ -5,48 +5,55 @@
     font-family: 'Libre Bodoni', serif;
 }
 
+
+
 :root {
-    --bg-color: rgb(50, 55, 62);
-    --primary-color: rgba(255, 252, 252, 0.822);
-    --color-title: rgb(253, 199, 3);
+    --bg-color: #302b2b;
+    --color-fondo2: #2a2323;
+    --color-titulo: rgb(253, 199, 3);
+    --bg-label: #040505;
+    --primary-color: rgb(255, 255, 255);
 }
 
 body {
-
+    background-color: #0D000D;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     min-height: 100vh;
-    background-color: var(--bg-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='290' height='290' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23373002' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23EDED06'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+
 
 }
 
 header {
     width: 100%;
-    height: 80px;
-    background-color: var(--primary-color);
+    height: 60px;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
 }
 
+
 .title {
-    margin-top: 15px;
     font-size: 30px;
     text-align: center;
     user-select: none;
-    color: var(--color-title);
+    color: var(--color-titulo);
 
 }
 
 
 .container {
-    width: 80%;
+    width: 70%;
     padding: 20px;
-    margin-top: 80px;
-    flex-grow: 3;
+    margin-top: 85px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,11 +71,13 @@ header {
 
 .row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+    gap: 30px;
 }
 
 .inputBox {
+    margin-top: 11px;
+    color: var(--color-titulo);
     position: relative;
     display: flex;
     flex-direction: column-reverse;
@@ -77,7 +86,7 @@ header {
 }
 
 .row-genero-selecao{
-    margin-left: 3px;
+    margin-left: 0px;
     display: flex;
     justify-items: center;
     
@@ -97,28 +106,32 @@ header {
 }
 
 .genero-selecao label {
+    font-size: 20px;
     margin: 10px;
     text-align: center;
-    color: var(--color-title);
+    color: var(--color-titulo);
     
 
 }
 
 
 .label {
-    margin-bottom: 9px;
+    font-size: 24px;
+    margin-bottom: 4px;
     text-align: center;
     padding: 3px;
-    color: var(--color-title);
+    color: var(--color-titulo);
 }
 
 
 
-.dptmento {
-    
+.dptmento {  
+    font-size: 24px;
+    color: var(--color-titulo);  
     border: none;
-    width: 130px;
-    background-color: var(--primary-color);
+    width: 140px;
+    height: 30px;
+    background-color: var(--color-fondo2);
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -127,28 +140,29 @@ header {
 
 
 
-.genero {   
-    margin-bottom: 16px; 
+.registro {   
+    color: var(--color-titulo);
+    margin-bottom: 0px; 
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     justify-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     transition: all 6s;
 }
 
-.genero1 {
-    padding: 9px;
+.registro-sect {
+    padding: 4px;
     padding-left: 0px;
-    margin-top: 9px;
+    margin-top: 4px;
    
 }
 
-.genero1 select{
+.registro-sect select{
    font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
 }
 .Estatud {
     width: 80px;
@@ -195,7 +209,7 @@ header {
 }
 
 .inputBox input:hover{
-    border-bottom: 5px solid var(--color-title);
+    border-bottom: 5px solid var(--color-titulo);
 }
 
  .inputBox input:focus,
@@ -218,26 +232,60 @@ border: 3px soli red;
     margin-top: 20px;
     margin-bottom: 27px;
     justify-self: center;
-    width: 130px;
+    background-color: var(--color-titulo);
+    width: 179px;
     height: 30px;
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: var(--primary-color);
-    border-radius: 2px;
+    border-radius: 30px;
+    transition: 0.5s;
 }
 
 .container .button:hover {
-    box-shadow: 0px 0px 16px var(--color-title);
+    color: aqua;
+    box-shadow: 0px 0px 16px var(--primary-color);
 }
 
 .container .button a {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     color: var(--color-title);
 }
 
+
+/* media query css */
+
+@media (max-width: 511px){
+
+    
+   .row{
+       margin-top: 20px;
+       display: flex;
+       flex-direction: column;
+      
+   }
+
+   .registro-sect select{
+       font-size: 19px;
+      width: 100%;
+   }
+   .genero-selecao{
+       text-align: center;
+       margin-bottom: 102px;
+       
+   }
+
+   .genero-selecao2{
+    margin: 3px;
+    padding: 7px;
+   }
+
+   .button {
+       margin: 0px auto;
+   }
+}
 
 
 
