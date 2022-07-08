@@ -264,11 +264,12 @@ header {
 /* media query css */
 @media (max-width: 830px) {
     .container {
+        margin-top:127px;
         height: 0vh;
     }
 
     .row {
-        margin-top: 10px;
+      
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
@@ -278,6 +279,10 @@ header {
         margin-top: 2px;
     }
 
+    .genero-selecao2{
+       margin-top: 11px; 
+    }
+
     .dptmento{
         align-items: center;
         justify-content: center;
@@ -285,7 +290,12 @@ header {
     }
 }
 
-
+@media (max-width: 760px){
+    .container {
+        margin-top: 446px;
+       
+    }
+}
 
 @media (max-width: 511px) {
 
@@ -300,6 +310,7 @@ header {
 
     .container {
         width: 90%;
+        margin-top: 1065px;
     }
 
     .inputBox {
