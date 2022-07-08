@@ -62,17 +62,26 @@ header {
 
 }
 
-.link-html{
-   position: absolute;
+.link-html {
+    position: absolute;
     left: 30px;
     top: 90px;
 }
 
 
 .row {
+    color: var(--color-titulo);
+    margin-top: 28px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
     gap: 30px;
+}
+
+.form_registro {
+    width: 90%;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .inputBox {
@@ -85,11 +94,19 @@ header {
 
 }
 
-.row-genero-selecao{
+.genero-selecao2 {
+    color: var(--color-titulo);
+}
+
+.genero-selecao2 input{
+    color: var(--color-titulo);
+}
+
+.row-genero-selecao {
     margin-left: 0px;
     display: flex;
     justify-items: center;
-    
+
 }
 
 .genero-selecao {
@@ -101,23 +118,24 @@ header {
     justify-items: center;
     justify-content: space-around;
     align-items: center;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 
 }
 
 .genero-selecao label {
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px;
     text-align: center;
     color: var(--color-titulo);
-    
+
 
 }
 
 
 .label {
-    font-size: 24px;
+    font-size: 15px;
     margin-bottom: 4px;
+    margin-top: 0px;
     text-align: center;
     padding: 3px;
     color: var(--color-titulo);
@@ -125,9 +143,9 @@ header {
 
 
 
-.dptmento {  
+.dptmento {
     font-size: 24px;
-    color: var(--color-titulo);  
+    color: var(--color-titulo);
     border: none;
     width: 140px;
     height: 30px;
@@ -139,41 +157,29 @@ header {
 }
 
 
-
-.registro {   
-    color: var(--color-titulo);
-    margin-bottom: 0px; 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    transition: all 6s;
-}
-
 .registro-sect {
     padding: 4px;
     padding-left: 0px;
     margin-top: 4px;
-   
+
 }
 
-.registro-sect select{
-   font-weight: 600;
+.registro-sect select {
+    font-weight: 600;
     font-size: 15px;
+    margin-top: 5px;
 }
+
 .Estatud {
     width: 80px;
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .label2 {
     font-size: 15px;
-    color: var(--color-title);   
+    color: var(--color-title);
 }
 
 
@@ -181,7 +187,7 @@ header {
 .inputBox label {
     height: 20px;
     position: relative;
-    top:20;
+    top: 20;
     left: -10;
     font-size: 15px;
     color: var(--color-title);
@@ -192,7 +198,7 @@ header {
 
 .inputBox input {
     background-color: var(--primary-color);
-    width: 100%;
+    width: 102%;
     height: 35px;
     bottom: -3px;
     padding: 17px;
@@ -200,7 +206,7 @@ header {
     border: none;
     outline: none;
     border-radius: 2px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     transition: 0.3s;
     color: black;
@@ -208,11 +214,11 @@ header {
 
 }
 
-.inputBox input:hover{
+.inputBox input:hover {
     border-bottom: 5px solid var(--color-titulo);
 }
 
- .inputBox input:focus,
+.inputBox input:focus,
 .inputBox input:valid {
     height: 100%;
 }
@@ -222,10 +228,10 @@ header {
     top: -10px;
     left: 0;
 
-} 
+}
 
-.input-error{
-border: 3px soli red;
+.input-error {
+    border: 3px soli red;
 }
 
 .container .button {
@@ -256,36 +262,72 @@ border: 3px soli red;
 
 
 /* media query css */
+@media (max-width: 830px) {
+    .container {
+        height: 0vh;
+    }
 
-@media (max-width: 511px){
+    .row {
+        margin-top: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 
-    
-   .row{
-       margin-top: 20px;
-       display: flex;
-       flex-direction: column;
-      
-   }
+    .registro-sect {
+        padding: 1px;
+        padding-left: 0px;
+        margin-top: 2px;
+    }
 
-   .registro-sect select{
-       font-size: 19px;
-      width: 100%;
-   }
-   .genero-selecao{
-       text-align: center;
-       margin-bottom: 102px;
-       
-   }
-
-   .genero-selecao2{
-    margin: 3px;
-    padding: 7px;
-   }
-
-   .button {
-       margin: 0px auto;
-   }
+    .dptmento{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 
 
+@media (max-width: 511px) {
+
+
+    .row {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .inputBox {
+        width: 95%;
+    }
+
+    .registro-sect {
+        width: 142px;
+        margin-bottom: 10px;
+    }
+
+    .registro-sect select {
+        font-size: 15px;
+        width: 226%;
+    }
+
+    .genero-selecao {
+        text-align: center;
+        margin-bottom: 102px;
+
+    }
+
+    .genero-selecao2 {
+        margin: 3px;
+        padding: 7px;
+    }
+
+    .button {
+        margin: 0px auto;
+    }
+}
